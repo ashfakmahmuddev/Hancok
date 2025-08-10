@@ -1,0 +1,916 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+span {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+ol {
+  list-style-type: none;
+  display: inline-block;
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+/* All common css end */
+
+/* font-family: "Oswald", sans-serif; */
+/* font-family: "Barlow Condensed", sans-serif; */
+
+/* navbar part css start */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 15%;
+}
+.menu {
+  width: 55%;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  padding-right: 30px;
+}
+.menu ul li a {
+  color: #dddddd;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  transition: 0.4s;
+}
+.menu ul li a:hover {
+  color: #ff4655;
+}
+.social {
+  width: 30%;
+  align-items: center;
+  text-align: right;
+}
+.social a {
+  color: #fff;
+  margin-left: 25px;
+}
+.social span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+}
+.social .fa-right-from-bracket {
+  font-size: 14px;
+}
+/* navbar part css end */
+
+/* banner part css start */
+#bannerPart {
+  background: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 25px 0 105px 0;
+}
+.banner {
+  color: #fff;
+  padding-top: 225px;
+  width: 610px;
+}
+.banner h3 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  padding: 30px 0 25px 0;
+  position: relative;
+}
+.banner h1::after {
+  position: absolute;
+  height: 4px;
+  width: 90px;
+  background-color: #fff;
+  content: "";
+  right: 0;
+  bottom: 22px;
+}
+.banner p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Oswald", sans-serif;
+  width: 520px;
+  padding-bottom: 50px;
+}
+.bannerButton a {
+  color: #121212;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  transition: 0.4s;
+}
+.bannerButton a:hover {
+  color: #ff4655;
+  background: transparent;
+  border: 1px solid #ff4655;
+}
+.bannerSocial {
+  margin-top: 170px;
+  padding: 0;
+}
+.bannerSocial a {
+  color: #000;
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 1px solid #d9d9d9;
+  transition: 0.4s;
+}
+.bannerSocial a i {
+  height: 18px;
+  width: 18px;
+  text-align: center;
+}
+.bannerSocial a:hover {
+  color: #ff4655;
+  background: transparent;
+  border: 1px solid #ff4655;
+}
+/* banner part css end */
+
+/* about part css start */
+#aboutPart {
+  background-color: #121212;
+  padding: 35px 0 80px 0;
+}
+.commonHead1 {
+  padding-bottom: 60px;
+}
+.commonHead1 h2 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: "Oswald", sans-serif;
+  width: 518px;
+  position: relative;
+}
+.commonHead1 h2::after {
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  background-color: #ff4655;
+  content: "";
+  right: 200px;
+  bottom: 11px;
+}
+.aboutContent {
+  display: flex;
+  gap: 80px;
+}
+.aboutContentImg {
+  width: 700px;
+  position: relative;
+}
+.aboutContentImg::before {
+  position: absolute;
+  height: 160px;
+  width: 7px;
+  background-color: #ff4655;
+  content: "";
+  top: -7px;
+  left: -7px;
+}
+.aboutContentImg::after {
+  position: absolute;
+  height: 7px;
+  width: 160px;
+  background-color: #ff4655;
+  content: "";
+  top: -7px;
+  left: -7px;
+}
+.aboutContentText {
+  width: 500px;
+  color: #fff;
+}
+.aboutContentText h3 {
+  font-size: 27px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+.aboutContentText span {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Barlow Condensed", sans-serif;
+  display: block;
+  padding: 5px 0;
+}
+.aboutContentText span i {
+  color: #ff4655;
+  display: inline-block;
+  padding-right: 10px;
+}
+.aboutContentText p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: "Oswald", sans-serif;
+  padding: 15px 0 20px 0;
+}
+.aboutContentText a {
+  color: #fff;
+  background-color: #212121;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid #212121;
+  padding: 15px 25px;
+  transition: 0.4s;
+}
+.aboutContentText a:hover {
+  color: #ff4655;
+  /* background: transparent; */
+  /* border: 1px solid #ff4655; */
+}
+.counterPart {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.counterPart1 {
+  background-color: #212121;
+  width: 315px;
+  text-align: center;
+  align-items: center;
+  padding: 30px 0 40px 0;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: 0.4s;
+}
+.counterPart1:hover {
+  box-shadow: 1px 1px 20px #ff4655;
+}
+.counterPart1 h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.counterPart1 h2 span {
+  color: #ff4655 !important;
+  font-size: 70px !important;
+  padding-left: 6px;
+}
+.counterPart1 p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  padding-top: 35px;
+}
+/* about part css end */
+
+/* popularGames part css start */
+#popularGamesPart {
+  background-color: #191919;
+  padding: 100px 0;
+}
+.popularGames {
+  position: relative;
+}
+.popularGamesHead {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.commonHead2 {
+  /* padding-bottom: 60px; */
+  text-align: right;
+}
+.commonHead2 h2 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: "Oswald", sans-serif;
+  /* width: 518px; */
+  position: relative;
+}
+.commonHead2 h2::before {
+  position: absolute;
+  height: 3px;
+  width: 105px;
+  background-color: #ff4655;
+  content: "";
+  right: 123px;
+  bottom: 11px;
+}
+.slideArrow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+}
+/* popularGames part css end */
+
+/* live part css start */
+#livePart {
+  background-color: #121212;
+  padding: 90px 0;
+}
+.liveHead h2 {
+  width: 446px !important;
+}
+.liveHead h2::after {
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  background-color: #ff4655;
+  content: "";
+  left: 140px;
+  bottom: 11px;
+}
+.liveVideo {
+  display: flex;
+  justify-content: space-between;
+}
+.liveVideo img {
+  width: 31%;
+  transition: 0.4s;
+}
+.liveVideo img:hover {
+  transform: scale(1.1);
+}
+.liveTeamHead h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 60px 0 50px 0;
+  text-align: center;
+}
+.liveTeam {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+.liveTeamPadding {
+  padding-bottom: 60px;
+}
+.liveTeam h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+/* live part css end */
+
+/* topGames part css start */
+#topGamesPart {
+  background-color: #191919;
+  padding: 90px 0;
+}
+.topGamesHead {
+  padding-bottom: 45px;
+}
+.topGamesHead h2::before {
+  position: absolute;
+  height: 3px;
+  width: 105px;
+  background-color: #ff4655;
+  content: "";
+  right: 82px;
+  bottom: 11px;
+}
+.topGamesSale {
+  display: flex;
+  justify-content: space-between;
+}
+.topGamesSale1 .img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.topGamesSale1 .img img {
+  display: block;
+}
+.topGamesSale1 .img:hover {
+  /* box-shadow: .5px .5px 20px #ff4655; */
+  transform: scale(1.03);
+}
+.topGamesSale1 .img:hover a i {
+  opacity: 1;
+}
+.topGamesSale1 a i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  color: black;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.4s;
+}
+.topGamesSale1 h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 20px 0;
+}
+.topGamesSale1 p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  /* padding: 20px 0; */
+}
+.topGamesSale1ContentFlex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+.topGamesSale1ContentFlex1 span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  background-color: #ff4655;
+  padding: 5px;
+}
+.topGamesSale1ContentFlex2 span {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-decoration: line-through;
+}
+.topGamesSale1ContentFlex3 span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+.topGames h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 60px 0 30px 0;
+}
+.favoriteGame {
+  display: flex;
+  background-color: #212121;
+  padding: 45px 0;
+}
+.favoriteGameContent {
+  width: 50%;
+  padding-left: 45px;
+}
+.favoriteGameContent h5 {
+  color: #ff4655;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+.favoriteGameContent h3 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 580px;
+  padding: 15px 0;
+}
+.favoriteGameContent p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  line-height: 24px;
+  width: 600px;
+  padding-bottom: 25px;
+}
+.favoriteGameContent a {
+  color: #fff;
+  background-color: #121212;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  padding: 15px 30px;
+}
+.favoriteGameImg {
+  width: 50%;
+  text-align: center;
+}
+/* topGames part css end */
+
+/* gameStore part css start */
+#gameStorePart {
+  background-color: #121212;
+  padding: 90px 0;
+}
+.gamingProduct {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.gamingProduct1 {
+  background-color: #212121;
+  width: 315px;
+  text-align: center;
+  padding: 25px 0;
+}
+.gamingProduct1 h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  padding: 20px 0 30px 0;
+}
+.gamingProduct1 img {
+  width: 240px;
+}
+.gamingProduct1 h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  padding: 15px 0;
+}
+.gamingProduct1 a {
+  color: #ff4655;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.leftSlider {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.leftSlider img,
+.rightSlider img {
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.leftSlider img:hover,
+.rightSlider img:hover {
+  background-color: #ff4655;
+  border-radius: 50%;
+}
+.rightSlider {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+/* gameStore part css end */
+
+/* professionalTeam part css start */
+#professionalTeamPart {
+  background-color: #191919;
+  padding: 100px 0;
+}
+.professionalTeamHead h2::before {
+  right: 90px;
+}
+.professionalTeamImg {
+  padding-top: 30px;
+}
+.professionalTeam1 {
+  display: flex;
+  justify-content: space-between;
+}
+.professionalTeam11 {
+  margin-top: 20px;
+  background: url(../img/professionalTeam1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 650px;
+  padding: 214px 0;
+  position: relative;
+}
+.professionalTeam111 {
+  background: url(../img/professionalTeam2.png) !important;
+}
+.professionalTeam1111 {
+  background: url(../img/professionalTeam3.png) !important;
+}
+.professionalTeam11111 {
+  background: url(../img/professionalTeam4.png) !important;
+}
+.professionalTeam11Overlay {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 40px 60px 30px 30px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.professionalTeam11Overlay h3 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.professionalTeam11Overlay p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  width: 300px;
+  line-height: 24px;
+  padding: 10px 0 20px 0;
+}
+.professionalTeam11Overlay .professionalTeam11Social .button a {
+  color: #fff;
+  background-color: #ff4655;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  padding: 5px 20px;
+}
+.professionalTeam11Social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.professionalTeam11Social .social {
+  display: flex;
+}
+.professionalTeam11Social .social a {
+  background-color: #ff4655;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 20px;
+  text-align: center;
+}
+.professionalTeam11Social .social a i {
+  height: 18px;
+  width: 18px;
+}
+.professionalTeam11:hover .professionalTeam11Overlay {
+  opacity: 1;
+}
+/* professionalTeam part css end */
+
+/* questionAns part css start */
+#questionAnsPart {
+  background-color: #121212;
+  padding: 55px 0 125px 0;
+}
+.questionAnsHead h2::after {
+  right: 60px;
+}
+.questionAnsContent {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.questionAnsContent1 {
+  display: flex;
+  margin: 75px 0;
+}
+.questionAnsContent1:hover .questionAnsContent1Text h4 {
+  color: #ff4655;
+}
+.rowLine {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #666666;
+  top: 100%;
+  left: 0;
+}
+.collumLine {
+  position: absolute;
+  width: 1px;
+  height: 148%;
+  background-color: #666666;
+  top: 26%;
+  left: 50%;
+}
+.questionAnsContent1 h3 {
+  color: #fff;
+  background-color: #ff4655;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 15px 25px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-top: 5px;
+}
+.questionAnsContent1Text {
+  padding-left: 40px;
+}
+.questionAnsContent1Text h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.questionAnsContent1Text p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  line-height: 24px;
+  width: 425px;
+  padding-top: 10px;
+}
+/* questionAns part css end */
+
+/* footer part css start */
+#footerPart {
+  background-color: #191919;
+  padding-top: 1px;
+}
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff4655;
+  padding: 35px 30px;
+  position: relative;
+  margin-top: -85px;
+  z-index: 2;
+  align-items: center;
+}
+.footerTop h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  width: 725px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.footerTop form input::placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+.footerTop form input {
+  padding: 10px 0 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 410px;
+  position: relative;
+}
+.footerTop form a {
+  color: #fff;
+  background-color: #191919;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 7px 20px 8px;
+  position: absolute;
+  top: 50.185%;
+  right: 28px;
+  border-radius: 30px;
+  transform: translateY(-50%);
+}
+.footerFlex{
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.footerLeft {
+  width: 450px;
+}
+.footerLeft p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  text-transform: uppercase;
+}
+.footerLeftSocial a {
+  color: #fff;
+  background-color: #212529;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: .4s;
+}
+.footerLeftSocial a:hover{
+  background-color: #ff4655;
+}
+.footerLeftSocial a i {
+  height: 18px;
+  width: 18px;
+  text-align: center;
+}
+.commonFooter{
+  padding: 10px 100px 0 100px;
+}
+.footerGallery h3,
+.commonFooter h3{
+  color: #fff;;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.commonFooter ul li{
+  padding-top: 25px;
+}
+.commonFooter ul li a{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  transition: .4s;
+}
+.commonFooter ul li a:hover{
+  color: #ff4655;
+}
+.footerGallery{
+  padding-top: 10px;
+  margin-left: 15px;
+}
+.footerImg{
+  padding-top: 30px;
+  width: 320px;
+  /* padding-left: 15px; */
+}
+.footerGalleryImg{
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerUnderline{
+  background-color: #666666;
+  height: 1px;
+  width: 100%;
+}
+.copyright{
+  padding: 25px 0;
+  text-align: center;
+}
+.copyright p{
+  color: #fff;;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.copyright p span{
+  color: #ff4655;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: capitalize;
+}
+/* footer part css end */
