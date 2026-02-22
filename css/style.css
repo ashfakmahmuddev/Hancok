@@ -28,8 +28,15 @@ ol {
   display: inline-block;
 }
 .container {
-  width: 1320px;
+  max-width: 1320px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 /* All common css end */
 
@@ -914,3 +921,223 @@ ol {
   text-transform: capitalize;
 }
 /* footer part css end */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .favoriteGame {
+    flex-direction: column;
+  }
+
+  .liveTeam {
+    width: 100%;
+  }
+
+  .professionalTeam11 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner {
+    width: 100%;
+    padding-top: 150px;
+  }
+
+  .banner p {
+    width: 100%;
+  }
+
+  .counterPart {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .counterPart1 {
+    width: 45%;
+  }
+
+  .popularGamesImg {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .topGamesSale {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .topGamesSale1 {
+    width: 45%;
+  }
+
+  .gamingProduct {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .gamingProduct1 {
+    width: 45%;
+  }
+
+  .professionalTeam1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footerFlex {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .bannerSocial {
+    margin-top: 50px;
+  }
+
+  .aboutContentImg,
+  .aboutContentText {
+    width: 100%;
+  }
+
+  .counterPart1 {
+    width: 100%;
+  }
+
+  .liveVideo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .liveVideo img {
+    width: 100%;
+  }
+
+  .liveTeam {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .topGamesSale1 {
+    width: 100%;
+  }
+
+  .favoriteGameContent,
+  .favoriteGameImg {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gamingProduct1 {
+    width: 100%;
+  }
+
+  .questionAnsContent {
+    flex-direction: column;
+  }
+
+  .questionAnsContent1Text p {
+    width: 100%;
+  }
+
+  .footerTop {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footerTop h2 {
+    width: 100%;
+  }
+
+  .footerTop form input {
+    width: 100%;
+  }
+
+  .footerFlex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .commonFooter {
+    padding: 20px 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .banner h1 {
+    font-size: 32px !important;
+  }
+
+  .banner h3 {
+    font-size: 18px;
+  }
+
+  .counterPart1 h2 {
+    font-size: 40px;
+  }
+
+  .footerTop h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .rowLine,
+  .collumLine {
+    display: none;
+  }
+}
