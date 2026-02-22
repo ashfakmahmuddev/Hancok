@@ -3,17 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span {
-  margin: 0;
-  padding: 0;
-  line-height: 0.8;
+body {
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p,span {
+  line-height: normal;
 }
 span {
   display: inline-block;
@@ -1140,4 +1134,19 @@ img {
   .collumLine {
     display: none;
   }
+}
+
+@media (max-width: 768px) {
+
+  .aboutContentImg,
+  .aboutContentText,
+  .favoriteGameContent h3,
+  .favoriteGameContent p,
+  .liveTeam,
+  .professionalTeam11,
+  .footerLeft,
+  .questionAnsContent1Text p {
+    width: 100% !important;
+  }
+
 }
